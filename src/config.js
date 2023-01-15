@@ -1,0 +1,1 @@
+export const CLOUD_FRONT_URL = "http://localhost:4000/github/";
