@@ -36,7 +36,7 @@ export default function SignIn() {
     if (open) {
       setTimeout(() => {
         navigate("/");
-      }, 2000);
+      }, 1500);
     }
   }, [open]);
 
@@ -59,7 +59,7 @@ export default function SignIn() {
       .get(CLOUD_FRONT_URL + `repos?userName=${username}&page=${page}&limit=6`)
       .then((res) => setRepoData(res.data))
       .catch((err) => {
-        navigate("/");
+        setOpen(true);
         console.log(err);
       });
   };
