@@ -229,7 +229,7 @@ export default function SignIn() {
                   backgroundColor: "white",
                 }}
                 onClick={() => {
-                  window.location.assign(item?.html_url);
+                  window.open(item?.html_url, "_blank");
                 }}
               >
                 <p className="cardHeading">{item?.name || "Repo Name"}</p>
